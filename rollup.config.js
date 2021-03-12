@@ -16,7 +16,7 @@ const uglifyOptions = {
        * Warning: This file is auto-generated, do not modify. Instead, make your changes in 'app/javascript/activeadmin_addons/' and run \`yarn build\`
        */
       //= require select2.full
-      //= require jquery.xdan.datetimepicker.full
+      //= require jquery.datetimepicker.full.min
     ` + '\n'
   },
 };
@@ -36,7 +36,6 @@ export default {
   ],
   // Use client's yarn dependencies instead of bundling everything
   external: [
-    'jquery-datetimepicker',
     'select2',
   ],
 };
