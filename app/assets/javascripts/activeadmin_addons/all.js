@@ -7872,7 +7872,7 @@
         var mixedOptions = $.extend(defaults, options);
         $entry.datetimepicker(mixedOptions);
         if ($entry.val()) {
-          $entry.datetimepicker("setValue", new Date($entry.val()));
+          $entry.datetimepicker("setValue", new Date($entry.data("iso8601Value")));
         }
         $entry.datetimepicker("validate");
       });
