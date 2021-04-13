@@ -5,7 +5,7 @@ class DateTimePickerInput < ActiveAdminAddons::InputBase
     load_attr(:maxlength, value: 19)
     load_attr(:autocomplete, value: 'off')
     load_attr(:value, value: formatted_input_value)
-    load_attr(:'data-iso8601-value', value: input_value&.iso8601)
+    load_attr(:'data-iso8601-value', value: input_value&.to_time&.iso8601)
   end
 
   def formatted_input_value
